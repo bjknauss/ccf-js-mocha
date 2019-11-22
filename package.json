@@ -1,0 +1,32 @@
+{
+  "name": "ccf-js-mocha",
+  "version": "1.0.0",
+  "description": "Repo for using JS with Mocha for Clean Code Friday.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "watch": "mocha -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/chai": "^4.2.5",
+    "@types/mocha": "^5.2.7"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.4.3",
+    "mocha": "^6.2.2",
+    "prettier": "^1.19.1"
+  },
+  "husky": {
+    "hooks": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

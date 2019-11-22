@@ -1,0 +1,5 @@
+{
+  "spec": "src/**/*.test.js",
+  "ui": "bdd",
+  "watch-files": ["src/**/*.{spec,test}.js"]
+}
